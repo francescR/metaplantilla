@@ -1,0 +1,223 @@
+/*
+    * style.css
+    author:;
+    version:1.0;
+    date:20240223
+    description: manual de estilos corporativos
+	INDEX
+	#1- COLORS
+	#2- TIPOGRAPHY
+	#3- FORMATO DE TEXTOS	
+		##1- Headings
+		##2- paragraphs
+	#4- TABLES
+	#5- IMAGES
+	#6- BUTTONS
+	#7- ICONS
+	#8- RESSOURCES
+	#9- FORMS
+	#10- MENU
+	#11- HEADER
+
+
+	###########
+	HOME
+	MAINTENANCE
+*/
+/******************  VARIABLES ******************/
+:root{
+    --color-1:#000000;
+    --color-2:#14213d;
+    --color-3:#fca311;
+    --color-4:#e5e5e5;
+    --color-5:#ffffff;
+
+	--color-text:#212529;
+}
+
+/******************  COLORS ******************/
+.color-1{color:var(--color-1);}
+.color-2{color:var(--color-2);}
+.color-3{color:var(--color-3);}
+.color-4{color:var(--color-4);}
+.color-5{color:var(--color-5);}
+
+
+.bg-color-1{background-color:var(--color-1);}
+.bg-color-2{background-color:var(--color-2);}
+.bg-color-3{background-color:var(--color-3);}
+.bg-color-4{background-color:var(--color-4);}
+.bg-color-5{background-color:var(--color-5);}
+
+/******************  TIPOGRAFÍAS ******************/
+
+/* 
+	TEXTO - ROBOTO
+	ENCABEZADOS - MERRIWEATHER
+*/
+
+@font-face{
+	font-family:'Roboto';
+	src: url('../fonts/Roboto/Roboto-Regular.ttf');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'Roboto';
+	src: url('../fonts/Roboto/Roboto-Italic.ttf');
+	font-weight:normal;
+	font-style:italic;
+}
+@font-face{
+	font-family:'Roboto';
+	src: url('../fonts/Roboto/Roboto-Bold.ttf');
+	font-weight:bold;
+	font-style:normal;
+}
+@font-face{
+	font-family:'Merriweather';
+	src: url('../fonts/Merriweather/Merriweather-BoldItalic.ttf');
+	font-weight:bold;
+	font-style:italic;
+}
+
+@font-face{
+	font-family:'Merriweather';
+	src: url('../fonts/Merriweather/Merriweather-Regular.ttf');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face{
+	font-family:'Merriweather';
+	src: url('../fonts/Merriweather/Merriweather-Italic.ttf');
+	font-weight:normal;
+	font-style:italic;
+}
+@font-face{
+	font-family:'Merriweather';
+	src: url('../fonts/Merriweather/Merriweather-Bold.ttf');
+	font-weight:bold;
+	font-style:normal;
+}
+@font-face{
+	font-family:'Merriweather';
+	src: url('../fonts/Merriweather/Merriweather-BoldItalic.ttf');
+	font-weight:bold;
+	font-style:italic;
+}
+
+
+/******************  FORMATO DE TEXTOS ******************/
+
+html,body{
+	font-family:'roboto',sans-serif;
+	color:var(--color-text);
+	font-weight:400;
+	line-height:1.5rem;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:'merriweather','roboto',sans-serif;
+	margin-bottom:0.5rem;
+	font-weight:600;
+}
+h1{font-size:2.5rem;color:var(--color-1);line-height:2.6rem;}
+h2{font-size:2rem;color:var(--color-2);line-height:2.1rem;}
+h3{font-size:1.75rem;color:var(--color-3);line-height:1.85rem;}
+h4{font-size:1.5rem;color:var(--color-2);line-height:1.6rem;}
+h5{font-size:1.25rem;color:var(--color-2);line-height:1.35rem;}
+h6{font-size:1rem;color:var(--color-2);line-height:1.1rem;}
+
+p{
+	margin-bottom:1rem;
+}
+a{
+	color:var(--color-3);
+	font-style:italic;
+	text-decoration:none;
+}
+
+i{}
+b{}
+
+blockquote{}
+caption{}
+figcaption{}
+
+/******************  IMAGES ******************/
+img{max-width:100%;height:auto;}
+
+/******************  BUTTONS ******************/
+.btn{
+	display:inline-block;
+	width:100px;
+	padding:0.5rem 1rem;
+	border:1px solid var(--color-3);
+	border-radius:10px;
+	background-color:var(--color-3);
+	color:#000;
+	text-decoration:none;
+	text-align:center;
+}
+.btn:active{
+	box-shadow:0px 0px 5px 2px rgba(0,0,0,.2);  
+}
+.btn-info{}
+.btn-info:hover{}
+
+/******************  RESSOURCES ******************/
+html{scroll-behavior: smooth;}
+.ancla{
+	position:fixed;
+	bottom:10px;
+	right:10px;
+
+	display:inline-block;
+	padding:0.3rem;
+	border:2px solid #000;
+	border-radius:5px;
+	background-color:var(--color-3);
+	text-decoration:none;
+	text-transform:uppercase;
+	color:#000;
+}
+
+.center{
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	justify-content:center;
+}
+
+/* .padding-1{padding:1rem;} */
+/* .padding-2{padding:2rem;} */
+/* .padding-3{padding:3rem;} */
+/* .padding-4{padding:4rem;} */
+/* .padding-5{padding:5rem;} */
+.padding-4{padding:4px;}
+.padding-8{padding:8px;}
+.padding-16{padding:16px;}
+
+.border{border:2px solid #f00;}
+
+.telefono-flotante{
+	display:inline-block;
+	position:fixed;
+	top:10px;
+	right:0;
+
+	padding:0.3rem;
+	border:1px solid #000;
+	background-color:#fff;
+
+	font-size:0.8rem;
+}
+
+/******************  MENU ******************/
+nav a{display:block;}
+nav li{
+	/* padding:0 !important;	 */
+	list-style-type: none;
+}
+
+/******************  HEADER ******************/
+/* header{ min-height:250px; } */
